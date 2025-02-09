@@ -1,0 +1,64 @@
+Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Dim username As String = txtuser.Text
+    Dim pass As String = txtpass.Text
+
+    Try
+        If Not cn.State = ConnectionState.Open Then
+            cn.Open()
+        End If
+
+        sql = "Select AccountID, Username, Password, Role, LoginAttemp, AccStatus from tblUsers where Username = @username;"
+        cmd = New OleDbCommand(sql, cn)
+        cmd.Parameters.AddWithValue("@username", username)
+        dr = cmd.ExecuteReader()
+
+        If dr.Read() Then
+            Dim dbuserid = dr("AccountID")
+            Dim dbuser As String = dr("Username")
+            Dim dbpass As String = dr("Password")
+            Dim dblogintemps As Integer = dr("LoginAttemp")
+            Dim dbaccstatus As String = dr("AccStatus")
+
+            If dbaccstatus = "Disabled" Then
+                MsgBox("Account is locked, please contact the administrator", vbExclamation)
+            ElseIf pass = dbpass Then
+                MsgBox("Login Successfully", vbExclamation)
+
+              
+                sql = "Update tblUsers SET LoginAttemp = 0, AccStatus = 'Active' where AccountID = @accountid;"
+                cmd = New OleDbCommand(sql, cn)
+                cmd.Parameters.AddWithValue("@accountid", dbuserid)
+                cmd.ExecuteNonQuery()
+            Else
+                dblogintemps += 1
+                MessageBox.Show("Incorrect Password. You have " & (3 - dblogintemps) & " attempts left.")
+                txtuser.Select()
+                txtpass.Clear()
+
+                sql = "Update tblUsers SET LoginAttemp = @loginattemp where AccountID = @accountid;"
+                cmd = New OleDbCommand(sql, cn)
+                cmd.Parameters.AddWithValue("@loginattemp", dblogintemps)
+                cmd.Parameters.AddWithValue("@accountid", dbuserid)
+                cmd.ExecuteNonQuery()
+
+                If dblogintemps >= 3 Then
+                    MsgBox("Account has been Locked. You reached the maximum Attempts")
+                    txtuser.Select()
+                    txtpass.Clear()
+               
+                    sql = "Update tblUsers SET AccStatus = 'Disabled' where AccountID = @accountid;"
+                    cmd = New OleDbCommand(sql, cn)
+                    cmd.Parameters.AddWithValue("@accountid", dbuserid)
+                    cmd.ExecuteNonQuery()
+                End If
+            End If
+        Else
+            MsgBox("Account not found", vbExclamation)
+            txtuser.Select()
+        End If
+    Catch ex As Exception
+        MessageBox.Show(ex.Message)
+    Finally
+        dr.Close()
+    End Try
+End Sub

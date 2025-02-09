@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="MyDatabaseDataSet" targetNamespace="http://tempuri.org/MyDatabaseDataSet.xsd" xmlns:mstns="http://tempuri.org/MyDatabaseDataSet.xsd" xmlns="http://tempuri.org/MyDatabaseDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="MyDatabaseConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="MyDatabaseConnectionString (MySettings)" PropertyReference="ApplicationSettings.IPT_31A3_REYES.My.MySettings.GlobalReference.Default.MyDatabaseConnectionString" Provider="System.Data.OleDb" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="LatestTransactionsTableAdapter" GeneratorDataComponentClassName="LatestTransactionsTableAdapter" Name="LatestTransactions" UserDataComponentName="LatestTransactionsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="MyDatabaseConnectionString (MySettings)" DbObjectName="LatestTransactions" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT AcctNo, Transtype, Amount FROM LatestTransactions</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="AcctNo" DataSetColumn="AcctNo" />
+              <Mapping SourceColumn="Transtype" DataSetColumn="Transtype" />
+              <Mapping SourceColumn="Amount" DataSetColumn="Amount" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="MyDatabaseDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="MyDatabaseDataSet" msprop:Generator_DataSetName="MyDatabaseDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="LatestTransactions" msprop:Generator_RowEvHandlerName="LatestTransactionsRowChangeEventHandler" msprop:Generator_RowDeletedName="LatestTransactionsRowDeleted" msprop:Generator_RowDeletingName="LatestTransactionsRowDeleting" msprop:Generator_RowEvArgName="LatestTransactionsRowChangeEvent" msprop:Generator_TablePropName="LatestTransactions" msprop:Generator_RowChangedName="LatestTransactionsRowChanged" msprop:Generator_RowChangingName="LatestTransactionsRowChanging" msprop:Generator_TableClassName="LatestTransactionsDataTable" msprop:Generator_RowClassName="LatestTransactionsRow" msprop:Generator_TableVarName="tableLatestTransactions" msprop:Generator_UserTableName="LatestTransactions">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="AcctNo" msprop:Generator_ColumnPropNameInRow="AcctNo" msprop:Generator_ColumnPropNameInTable="AcctNoColumn" msprop:Generator_ColumnVarNameInTable="columnAcctNo" msprop:Generator_UserColumnName="AcctNo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Transtype" msprop:Generator_ColumnPropNameInRow="Transtype" msprop:Generator_ColumnPropNameInTable="TranstypeColumn" msprop:Generator_ColumnVarNameInTable="columnTranstype" msprop:Generator_UserColumnName="Transtype" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Amount" msprop:Generator_ColumnPropNameInRow="Amount" msprop:Generator_ColumnPropNameInTable="AmountColumn" msprop:Generator_ColumnVarNameInTable="columnAmount" msprop:Generator_UserColumnName="Amount" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

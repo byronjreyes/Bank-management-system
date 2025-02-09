@@ -1,0 +1,408 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{716B7EFF-963A-4F86-AF8F-40B4C088BCDB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>IPT_31A3_REYES.My.MyApplication</StartupObject>
+    <RootNamespace>IPT_31A3_REYES</RootNamespace>
+    <AssemblyName>IPT-31A3-REYES</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\Admin\Desktop\Sirbank\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>false</MapFileExtensions>
+    <ApplicationRevision>6</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>IPT-31A3-REYES.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>IPT-31A3-REYES.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DocumentationFile>IPT-31A3-REYES.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DocumentationFile>IPT-31A3-REYES.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>EA6CA52803F4FF2C00147584D5F484D2C833B7AB</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>IPT-31A3-REYES_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu.Licensing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=f89b4760ba7dcb6b" />
+    <Reference Include="Bunifu.UI.WinForms.1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\x64\Debug\Bunifu.UI.WinForms.1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuButton, Version=4.1.1.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\x64\Debug\Bunifu.UI.WinForms.BunifuButton.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI">
+      <HintPath>..\Guna.UI-Framework-Lib-master\Guna.UI-Framework-Lib-master\Guna.UI WinForms\.net 4.0\Guna.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\x64\Debug\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Accountchange.Designer.vb">
+      <DependentUpon>Accountchange.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Accountchange.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminDashboard.Designer.vb">
+      <DependentUpon>AdminDashboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AdminDashboard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="atmlogin.Designer.vb">
+      <DependentUpon>atmlogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="atmlogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="balanceupp.vb" />
+    <Compile Include="ChooseMain.Designer.vb">
+      <DependentUpon>ChooseMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ChooseMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clientboard.Designer.vb">
+      <DependentUpon>Clientboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Clientboard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientCreatAccount.Designer.vb">
+      <DependentUpon>ClientCreatAccount.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ClientCreatAccount.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientDashboard.Designer.vb">
+      <DependentUpon>ClientDashboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ClientDashboard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="clientloging.Designer.vb">
+      <DependentUpon>clientloging.vb</DependentUpon>
+    </Compile>
+    <Compile Include="clientloging.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DatabaseConnection.vb" />
+    <Compile Include="Depositform.Designer.vb">
+      <DependentUpon>Depositform.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Depositform.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCreateAccount.Designer.vb">
+      <DependentUpon>FrmCreateAccount.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCreateAccount.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Loginform.Designer.vb">
+      <DependentUpon>Loginform.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Loginform.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageClientAccounts.Designer.vb">
+      <DependentUpon>ManageClientAccounts.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ManageClientAccounts.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageUserAccounts.Designer.vb">
+      <DependentUpon>ManageUserAccounts.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ManageUserAccounts.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MyDatabaseDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MyDatabaseDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MyDatabaseDataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MyDatabaseDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TransactionHistory.Designer.vb">
+      <DependentUpon>TransactionHistory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TransactionHistory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vbmsgbox.Designer.vb">
+      <DependentUpon>vbmsgbox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="vbmsgbox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Withdrawform.Designer.vb">
+      <DependentUpon>Withdrawform.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Withdrawform.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Accountchange.resx">
+      <DependentUpon>Accountchange.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminDashboard.resx">
+      <DependentUpon>AdminDashboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="atmlogin.resx">
+      <DependentUpon>atmlogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChooseMain.resx">
+      <DependentUpon>ChooseMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clientboard.resx">
+      <DependentUpon>Clientboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientCreatAccount.resx">
+      <DependentUpon>ClientCreatAccount.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientDashboard.resx">
+      <DependentUpon>ClientDashboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="clientloging.resx">
+      <DependentUpon>clientloging.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Depositform.resx">
+      <DependentUpon>Depositform.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCreateAccount.resx">
+      <DependentUpon>FrmCreateAccount.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Loginform.resx">
+      <DependentUpon>Loginform.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageClientAccounts.resx">
+      <DependentUpon>ManageClientAccounts.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageUserAccounts.resx">
+      <DependentUpon>ManageUserAccounts.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TransactionHistory.resx">
+      <DependentUpon>TransactionHistory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vbmsgbox.resx">
+      <DependentUpon>vbmsgbox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Withdrawform.resx">
+      <DependentUpon>Withdrawform.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IPT-31A3-REYES_TemporaryKey.pfx" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="MyDatabaseDataSet.xsc">
+      <DependentUpon>MyDatabaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MyDatabaseDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MyDatabaseDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MyDatabaseDataSet.xss">
+      <DependentUpon>MyDatabaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MyDatabaseDataSet1.xsc">
+      <DependentUpon>MyDatabaseDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="MyDatabaseDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MyDatabaseDataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MyDatabaseDataSet1.xss">
+      <DependentUpon>MyDatabaseDataSet1.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\profile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\idnumber.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\ekis.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Bunifu.Licensing.dll" />
+    <None Include="img\password-logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.NetCore.CoreRuntime.3.1.x64">
+      <Visible>False</Visible>
+      <ProductName>.NET Core Runtime 3.1.32 %28x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>

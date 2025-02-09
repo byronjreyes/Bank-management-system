@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33403.182
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "IPT-31A3-REYES", "IPT-31A3-REYES.vbproj", "{716B7EFF-963A-4F86-AF8F-40B4C088BCDB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{716B7EFF-963A-4F86-AF8F-40B4C088BCDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{716B7EFF-963A-4F86-AF8F-40B4C088BCDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{716B7EFF-963A-4F86-AF8F-40B4C088BCDB}.Debug|x64.ActiveCfg = Debug|x64
+		{716B7EFF-963A-4F86-AF8F-40B4C088BCDB}.Debug|x64.Build.0 = Debug|x64
+		{716B7EFF-963A-4F86-AF8F-40B4C088BCDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{716B7EFF-963A-4F86-AF8F-40B4C088BCDB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{716B7EFF-963A-4F86-AF8F-40B4C088BCDB}.Release|x64.ActiveCfg = Release|x64
+		{716B7EFF-963A-4F86-AF8F-40B4C088BCDB}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8B4FF62E-4F87-49CB-A15C-630393ABE51F}
+	EndGlobalSection
+EndGlobal

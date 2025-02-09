@@ -1,0 +1,29 @@
+C:\Users\Admin\Desktop\sirbanag-bank\obj\x64\Release\IPT-31A3-REYES.vbproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\sirbanag-bank\obj\x64\Release\IPT_31A3_REYES.atmlogin.resources
+C:\Users\Admin\Desktop\sirbanag-bank\obj\x64\Release\IPT_31A3_REYES.ChooseMain.resources
+C:\Users\Admin\Desktop\sirbanag-bank\obj\x64\Release\IPT_31A3_REYES.ClientCreatAccount.resources
+C:\Users\Admin\Desktop\sirbanag-bank\obj\x64\Release\IPT_31A3_REYES.clientloging.resources
+C:\Users\Admin\Desktop\sirbanag-bank\obj\x64\Release\IPT_31A3_REYES.Form1.resources
+C:\Users\Admin\Desktop\sirbanag-bank\obj\x64\Release\IPT_31A3_REYES.FrmCreateAccount.resources
+C:\Users\Admin\Desktop\sirbanag-bank\obj\x64\Release\IPT_31A3_REYES.Loginform.resources
+C:\Users\Admin\Desktop\sirbanag-bank\obj\x64\Release\IPT_31A3_REYES.Resources.resources
+C:\Users\Admin\Desktop\sirbanag-bank\obj\x64\Release\IPT-31A3-REYES.vbproj.GenerateResource.cache
+C:\Users\Admin\Desktop\sirbanag-bank\obj\x64\Release\IPT-31A3-REYES.vbproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\Files Desktop\sirbanag-bank\sirbanag-bank\obj\x64\Release\IPT-31A3-REYES.vbproj.AssemblyReference.cache
+C:\Users\Admin\Documents\Files Desktop\sirbanag-bank\sirbanag-bank\obj\x64\Release\IPT_31A3_REYES.AdminDashboard.resources
+C:\Users\Admin\Documents\Files Desktop\sirbanag-bank\sirbanag-bank\obj\x64\Release\IPT_31A3_REYES.atmlogin.resources
+C:\Users\Admin\Documents\Files Desktop\sirbanag-bank\sirbanag-bank\obj\x64\Release\IPT_31A3_REYES.ChooseMain.resources
+C:\Users\Admin\Documents\Files Desktop\sirbanag-bank\sirbanag-bank\obj\x64\Release\IPT_31A3_REYES.ClientCreatAccount.resources
+C:\Users\Admin\Documents\Files Desktop\sirbanag-bank\sirbanag-bank\obj\x64\Release\IPT_31A3_REYES.ClientDashboard.resources
+C:\Users\Admin\Documents\Files Desktop\sirbanag-bank\sirbanag-bank\obj\x64\Release\IPT_31A3_REYES.clientloging.resources
+C:\Users\Admin\Documents\Files Desktop\sirbanag-bank\sirbanag-bank\obj\x64\Release\IPT_31A3_REYES.Depositform.resources
+C:\Users\Admin\Documents\Files Desktop\sirbanag-bank\sirbanag-bank\obj\x64\Release\IPT_31A3_REYES.Form1.resources
+C:\Users\Admin\Documents\Files Desktop\sirbanag-bank\sirbanag-bank\obj\x64\Release\IPT_31A3_REYES.FrmCreateAccount.resources
+C:\Users\Admin\Documents\Files Desktop\sirbanag-bank\sirbanag-bank\obj\x64\Release\IPT_31A3_REYES.Loginform.resources
+C:\Users\Admin\Documents\Files Desktop\sirbanag-bank\sirbanag-bank\obj\x64\Release\IPT_31A3_REYES.ManageClientAccounts.resources
+C:\Users\Admin\Documents\Files Desktop\sirbanag-bank\sirbanag-bank\obj\x64\Release\IPT_31A3_REYES.ManageUserAccounts.resources
+C:\Users\Admin\Documents\Files Desktop\sirbanag-bank\sirbanag-bank\obj\x64\Release\IPT_31A3_REYES.Resources.resources
+C:\Users\Admin\Documents\Files Desktop\sirbanag-bank\sirbanag-bank\obj\x64\Release\IPT_31A3_REYES.TransactionHistory.resources
+C:\Users\Admin\Documents\Files Desktop\sirbanag-bank\sirbanag-bank\obj\x64\Release\IPT_31A3_REYES.WithdrawForm.resources
+C:\Users\Admin\Documents\Files Desktop\sirbanag-bank\sirbanag-bank\obj\x64\Release\IPT-31A3-REYES.vbproj.GenerateResource.cache
+C:\Users\Admin\Documents\Files Desktop\sirbanag-bank\sirbanag-bank\obj\x64\Release\IPT-31A3-REYES.vbproj.CoreCompileInputs.cache

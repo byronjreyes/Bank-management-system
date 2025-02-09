@@ -1,0 +1,51 @@
+ Private Sub btnWithdraw_Click(sender As Object, e As EventArgs) Handles btnwithdraw.Click
+     Dim withdrawalAmount As Double
+
+     If Double.TryParse(txtpin.Text, withdrawalAmount) Then
+         If withdrawalAmount <= CDbl(ClientDashboard.lblcurrentbal.Text) Then
+             ' Sufficient balance for withdrawal
+             logsavewithdraw(withdrawalAmount)
+         Else
+             MsgBox("Insufficient funds for withdrawal", vbExclamation)
+         End If
+     Else
+         MsgBox("Invalid withdrawal amount", vbExclamation)
+     End If
+ End Sub
+
+ Private Sub logsavewithdraw(ByVal withdrawalAmount As Double)
+     ' Insert a new record for the withdrawal
+     sql = "INSERT INTO tbltrans([AcctNo],[TransNo],[Transtype],[Amount],[DateTime]) VALUES(@acctno, @transno, @transtype, @amount, @datetime)"
+     cmd = New OleDbCommand(sql, cn)
+
+     With cmd
+         .Parameters.AddWithValue("@acctno", ClientDashboard.lblnumber.Text)
+         .Parameters.AddWithValue("@transno", "1")
+         .Parameters.AddWithValue("@transtype", "Withdrawal")
+         .Parameters.AddWithValue("@amount", -withdrawalAmount) ' Use negative value for withdrawal
+         .Parameters.AddWithValue("@datetime", Now.ToString())
+         .ExecuteNonQuery()
+     End With
+
+     ' Update the Balance column in tbltrans
+     Dim newBalance As Double = CDbl(ClientDashboard.lblcurrentbal.Text) - withdrawalAmount
+     sql = "UPDATE tbltrans SET Balance = @balance WHERE AcctNo = @acctno"
+
+     cmd = New OleDbCommand(sql, cn)
+     With cmd
+         .Parameters.AddWithValue("@balance", newBalance)
+         .Parameters.AddWithValue("@acctno", ClientDashboard.lblnumber.Text)
+         .ExecuteNonQuery()
+     End With
+
+     MsgBox("Withdrawal Success", vbInformation)
+     ClientDashboard.loadaccount()
+ End Sub
+
+ Private Sub PictureBox3_Click(sender As Object, e As EventArgs) Handles PictureBox3.Click
+     Me.Close()
+ End Sub
+
+ Private Sub atmlogin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+ End Sub
